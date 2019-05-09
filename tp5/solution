@@ -1,0 +1,1 @@
+docker run -p 8050:80 --name volume_nginx -d -v /home/adminl/Docker/tp5:/usr/share/nginx/html nginx
