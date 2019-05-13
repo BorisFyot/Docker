@@ -1,0 +1,21 @@
+version: '2'
+
+services:
+  nginx:
+    build: 
+      context: tp1 
+      dockerfile: Dockerfile
+      args:
+        install: nginx
+    container_name: monpremiercomp
+    ports:
+      - 8050:80
+
+  nginx2:
+    build: 
+      context: tp2
+      dockerfile: Dockerfile
+    container_name: monpremiercompo
+    ports:
+      - 8051:80
+

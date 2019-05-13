@@ -1,0 +1,9 @@
+version: '2'
+
+services:
+  nginx:
+    image: nginx:latest
+    container_name: monpremiercompose
+    ports:
+      - 8045:80
+
